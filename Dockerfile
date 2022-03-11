@@ -44,7 +44,7 @@ RUN pip install pip pipenv --upgrade
 # tensorflow (including Keras)
 RUN pip install flask
 RUN pip install tensorflow keras
-
+RUN useradd -m charan && adduser charan sudo && echo 'charan:charan' | chpasswd
 # pytorch (cpu)
 RUN apt-get update && apt-get -y install gcc mono-mcs && rm -rf /var/lib/apt/lists/*
 #RUN pip install torch==1.5.0+cpu torchvision==0.6.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
