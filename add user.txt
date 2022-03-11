@@ -1,0 +1,1 @@
+useradd -m charan && sudo adduser charan sudo && echo 'charan:charan' | sudo chpasswd
